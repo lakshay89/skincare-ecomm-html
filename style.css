@@ -814,6 +814,38 @@ Checkout page style start
   border-color: var(--accent-color);
   box-shadow: none;
 }
+/* Fix navbar on small mobiles 370px–420px */
+@media (min-width: 370px) and (max-width: 420px) {
+  .main-menu.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .main-menu .container {
+    flex-wrap: nowrap;
+  }
+
+  /* Show mobile logo on the left */
+  .main-logo.d-lg-none {
+    display: block;
+  }
+
+  .main-logo.d-lg-none img {
+    width: 100px;        /* adjust as needed */
+    height: auto;
+  }
+
+  /* Move toggler to the right */
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  /* Remove extra top margin under navbar icons block */
+  .container-fluid.px-md-5.d-lg-none ul {
+    margin-top: 0.5rem;
+  }
+}
+
 
 
 
